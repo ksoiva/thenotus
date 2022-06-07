@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="to_do_list_page_style.css">
+    <link rel="stylesheet" href="about_us_page_style.css">
+    <title>Notus - To do list</title>
+    <link rel="icon" href="images/favicon_light.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="upperpart">
+        <div class="navbar text_style">
+            <h1><a href="main_page.html">The Notus</a></h1>
+            <ul class="center_text">
+                <li><a href="timer_page.html">Timer</a></li>
+                <li><a href="about_us_page.html">About us</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </div>
+    </div>
+    <h1 class="text_style todo_header">MY TO-DO LIST</h1>
+
+    <div class="todo text_style">
+        <div class="todo__input">
+            <input class="todo__text" type="text">
+            <span class="todo__add"></span>
+        </div>
+        <select class="todo__options">
+            <option value="active">Active</option>
+            <option value="completed">Completed</option>
+            <option value="deleted">Deleted</option>
+        </select>
+        <ul class="todo__items" data-todo-option="active"></ul>
+    </div>
+
+    <div class="wrapper">
+        <footer id="footer" class="footer-1">
+            <div class="main-footer widgets-dark typo-light" style="margin-top: 32%">
+                <div class="container">
+                    <div class="row">
+           
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                             <div class="widget subscribe no-box">
+                                 <h5 class="widget-title">The Notus<span></span></h5>
+                                 <p><i>Coordinate projects and tasks. Boost your productivity.</i></p>
+                            </div>
+                        </div>
+        
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget no-box">
+                                 <h5 class="widget-title">Quick Links<span></span></h5>
+                                 <ul class="thumbnail-widget">
+                                     <li><div class="thumb-content"><a href="main_page.html">Home page</a></div></li>
+                                     <li><div class="thumb-content"><a href="timer_page.html">Timer</a></div></li>
+                                     <li><div class="thumb-content"><a href="about_us_page.html">About us</a></div></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget no-box">
+                                <h5 class="widget-title">Contact us<span></span></h5>
+                                <p>Inspire us - leave a review</p>
+                                <a class="btn" href="response_page.html">Compose</a>
+                            </div>
+                        </div>
+        
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget no-box">
+                                <h5 class="widget-title">Contact Us<span></span></h5>
+                                <p>the_notus@gmail.com</p>
+                                <ul class="social-footer2">
+                                    <li class=""><a href="https://www.facebook.com/lvivpolytechnic/" target="_blank" title="Facebook"><img alt="Facebook" width="30" height="30" src="images\Facebook.png"></a></li>
+                                    <li class=""><a href="https://mobile.twitter.com/hashtag/nulp?src=hash" target="_blank" title="Twitter"><img alt="Twitter" width="30" height="30" src="images\Twitter.png"></a></li>
+                                    <li class=""><a href="https://www.instagram.com/lpnu_official/" target="_blank" title="Instagram"><img alt="instagram" width="30" height="30" src="images\Instagram.png"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+           
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>The Notus © 2022. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script defer src="todolists_script.js"></script>
+
+</html>

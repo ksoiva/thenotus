@@ -1,0 +1,136 @@
+:root {
+    --main-button-color: #8355ea;
+    --additional-color: #4f4d56;
+}
+
+.dark-theme {
+    --main-button-color: #090909;
+    --additional-color:#fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.upperpart {
+    width: 100%;
+    background-color: var(--upperpart-color);
+}
+
+.navbar {
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 21px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    font-size: 35px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30%;
+}
+
+.navbar h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#icon {
+    width: 25px;
+    cursor: pointer;
+}
+
+.timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+
+.clock {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 15rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    font-family: arial, sans-serif;
+    color:var(--additional-color);
+}
+
+.mode-button {
+    font-size: 16px;
+    height: 28px;
+    cursor: pointer;
+    box-shadow: none;
+    font-weight: 300;
+    color: var(--additional-color);
+    border: 1px solid transparent;
+    margin: 0px;
+    border-radius: 4px;
+    padding: 2px 12px;
+    background: none;
+}
+
+.mode-button.active {
+    border-color: var(--additional-color);
+}
+
+.main-button {
+    cursor: pointer;
+    font-size: 22px;
+    height: 55px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    width: 200px;
+    background-color: var(--main-button-color);
+    border-width: initial;
+    border-style: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+}
+
+button:focus, button:active {
+    outline: none;
+}
+
+.main-button.active {
+    transform: translateY(6px);
+    box-shadow: none;
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .clock {
+        font-size: 8rem;
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="timer_page_style.css">
+    <link rel="stylesheet" href="to_do_list_page_style.css">
+    <link rel="stylesheet" href="about_us_page_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>Notus - Timer</title>
+    <link rel="icon" href="images/favicon_light.ico">
+</head>
+
+<body>
+    <div class="upperpart">
+        <div class="navbar text_style">
+            <h1><a href="main_page.html">The Notus</a></h1>
+            <ul class="center_text">
+                <li><a href="to_do_list_page.html">To do list</a></li>
+                <li><a href="about_us_page.html">About us</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </div>
+    </div>
+    <main class="app">
+        <div class="timer text_style">
+          <div class="button-group mode-buttons" id="js-mode-buttons">
+            <button
+              data-mode="pomodoro"
+              class="button active mode-button"
+              id="js-pomodoro"
+            >
+              Pomodoro
+            </button>
+            <button
+              data-mode="shortBreak"
+              class="button mode-button"
+              id="js-short-break"
+            >
+              Short break
+            </button>
+            <button
+              data-mode="longBreak"
+              class="button mode-button"
+              id="js-long-break"
+            >
+              Long break
+            </button>
+          </div>
+          <div class="clock" id="js-clock">
+            <span id="js-minutes">25</span>
+            <span class="separator">:</span>
+            <span id="js-seconds">00</span>
+          </div>
+          <button class="main-button" data-action="start" id="js-btn">
+            Start
+          </button>
+        </div>
+      </main>
+
+      <div class="wrapper">
+        <footer id="footer" class="footer-1">
+            <div class="main-footer widgets-dark typo-light" style="margin-top: 45%">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                             <div class="widget subscribe no-box">
+                                 <h5 class="widget-title">The Notus<span></span></h5>
+                                 <p><i>Coordinate projects and tasks. Boost your productivity.</i></p>
+                            </div>
+                        </div>
+        
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget no-box">
+                                 <h5 class="widget-title">Quick Links<span></span></h5>
+                                 <ul class="thumbnail-widget">
+                                     <li><div class="thumb-content"><a href="main_page.html">Home page</a></div></li>
+                                     <li><div class="thumb-content"><a href="to_do_list_page.html">To do list</a></div></li>
+                                     <li><div class="thumb-content"><a href="about_us_page.html">About us</a></div></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget no-box">
+                                <h5 class="widget-title">Contact us<span></span></h5>
+                                <p>Inspire us - leave a review</p>
+                                <a class="btn" href="response_page.html">Compose</a>
+                            </div>
+                        </div>
+        
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget no-box">
+                                <h5 class="widget-title">Contact Us<span></span></h5>
+                                <p>the_notus@gmail.com</p>
+                                <ul class="social-footer2">
+                                    <li class=""><a href="https://www.facebook.com/lvivpolytechnic/" target="_blank" title="Facebook"><img alt="Facebook" width="30" height="30" src="images\Facebook.png"></a></li>
+                                    <li class=""><a href="https://mobile.twitter.com/hashtag/nulp?src=hash" target="_blank" title="Twitter"><img alt="Twitter" width="30" height="30" src="images\Twitter.png"></a></li>
+                                    <li class=""><a href="https://www.instagram.com/lpnu_official/" target="_blank" title="Instagram"><img alt="instagram" width="30" height="30" src="images\Instagram.png"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+           
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>The Notus © 2022. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script defer src="timerpage_script.js"></script>
+
+</html>
